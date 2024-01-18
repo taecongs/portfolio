@@ -118,7 +118,7 @@ const Skill = () => {
                         </div>
 
                         <div className='skill_card_body'>
-                            <h2 className='skill_card_title'>JAVAScript</h2>
+                            <h2 className='skill_card_title'>JavaScript</h2>
 
                             <ul className="skill_card_knowledge">
                                 <li>Front-end</li>

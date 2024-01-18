@@ -112,7 +112,7 @@ const Portfolio = () => {
 
                                 <div className='sider_my'>
                                     <p className='slider_my_t'>
-                                    포켓몬 등록 & 포켓몬 진화 등록 기능, 등록한 포켓몬 정보 수정 기능, 데이터베이스에 저장된 포켓몬 목록 구현, 등록되어 있는 포켓몬 검색 기능 구현 및 프론트엔드 작업
+                                    포켓몬 등록 & 포켓몬 진화 등록 기능, 등록한 포켓몬 정보 수정 기능, 데이터베이스에 저장된 포켓몬 목록 구현, 등록되어 있는 포켓몬 검색 기능 구현 및 퍼블리싱 작업
                                     </p>
                                 </div>
 
@@ -130,7 +130,7 @@ const Portfolio = () => {
                                     */}
 
                                     <div className='notion_box'>
-                                        <a href='https://abundant-cyclamen-76a.notion.site/59dfa8443a1d46fdb2f210c0d05613c0?pvs=4' target='_blank' rel='noopener noreferrer' alt='노션 이동하기' title='노션 이동하기'>
+                                        <a href='https://abundant-cyclamen-76a.notion.site/9a7218a0ea3d4470a1c5f699a24c2135?pvs=4' target='_blank' rel='noopener noreferrer' title='노션 이동하기'>
                                             <span className='notion_text'>노션 바로가기</span>
                                         </a>
                                     </div>
@@ -167,7 +167,7 @@ const Portfolio = () => {
 
                                 <div className='sider_my'>
                                     <p className='slider_my_t'>
-                                        접속 한 대시보드에 따라 자동 및 수동 모드 구현, 시설 제어 기능에 대한 탭 메뉴 구현 및 프론트엔드 작업
+                                        접속 한 대시보드에 따라 자동 및 수동 모드 구현, 시설 제어 기능에 대한 탭 메뉴 구현 및 퍼블리싱 작업
                                     </p>
                                 </div>
 
@@ -186,7 +186,7 @@ const Portfolio = () => {
                                     */}
 
                                     <div className='notion_box'>
-                                        <a href='https://abundant-cyclamen-76a.notion.site/Take5-ENT-3D-92bbe07d6eef460bb8e0d00ee20239da?pvs=4' target='_blank' rel='noopener noreferrer' alt='노션 이동하기' title='노션 이동하기'>
+                                        <a href='https://abundant-cyclamen-76a.notion.site/Take5-ENT-d390401e13494e3fb34c2f74a67c0bfe?pvs=4' target='_blank' rel='noopener noreferrer' title='노션 이동하기'>
                                             <span className='notion_text'>노션 바로가기</span>
                                         </a>
                                     </div>
@@ -224,7 +224,7 @@ const Portfolio = () => {
 
                                 <div className='sider_my'>
                                     <p className='slider_my_t'>
-                                        데이터베이스에 저장된 장비/시설물 및 POI/시설물 목록 구현,  3D 도면의 층 이동을 위한 버튼 구현, 서브메뉴(푸터) 이벤트 관련 등의 프론트엔드 작업
+                                        데이터베이스에 저장된 장비/시설물 및 POI/시설물 목록 구현,  3D 도면의 층 이동을 위한 버튼 구현, 서브메뉴(푸터) 이벤트 관련 등의 퍼블리싱 작업
                                     </p>
                                 </div>
 
@@ -243,7 +243,7 @@ const Portfolio = () => {
                                      */}
 
                                     <div className='notion_box'>
-                                        <a href='https://abundant-cyclamen-76a.notion.site/Take5-ENT-LinkedFires-e720b457561840f3883301b1cd6eed41?pvs=4' target='_blank' rel='noopener noreferrer' alt='노션 이동하기' title='노션 이동하기'>
+                                        <a href='https://abundant-cyclamen-76a.notion.site/Take5-ENT-LinkedFires-e1350736023148348d0c394bc133b938?pvs=4' target='_blank' rel='noopener noreferrer' title='노션 이동하기'>
                                             <span className='notion_text'>노션 바로가기</span>
                                         </a>
                                     </div>
@@ -281,7 +281,7 @@ const Portfolio = () => {
 
                                 <div className='sider_my'>
                                     <p className='slider_my_t'>
-                                    데이터베이스에 저장된 빌딩·층 목록 구현, 새로운 알람 생성 및 생성한 알람 목록 게시판 형태로 구현, 생성된 알람의 기간 별 필터링 기능 및 차트 구현, mqtt를 이용해 생성된 알람 카운트 및 알람 발생 메시지 실시간 업데이트 기능 구현 및 프론트엔드 작업
+                                    데이터베이스에 저장된 빌딩·층 목록 구현, 새로운 알람 생성 및 생성한 알람 목록 게시판 형태로 구현, 생성된 알람의 기간 별 필터링 기능 및 차트 구현, mqtt를 이용해 생성된 알람 카운트 및 알람 발생 메시지 실시간 업데이트 기능 구현 및 퍼블리싱 작업
                                     </p>
                                 </div>
 
@@ -300,7 +300,7 @@ const Portfolio = () => {
                                     */}
 
                                     <div className='notion_box'>
-                                        <a href='https://abundant-cyclamen-76a.notion.site/Take5-ENT-Hyundai-9d937f35675e43cd92814639a21d47b7?pvs=4' target='_blank' rel='noopener noreferrer' alt='노션 이동하기' title='노션 이동하기'>
+                                        <a href='https://abundant-cyclamen-76a.notion.site/Take5-ENT-Hyundai-b8376dd0535c4188ad65c078c245bc85?pvs=4' target='_blank' rel='noopener noreferrer' title='노션 이동하기'>
                                             <span className='notion_text'>노션 바로가기</span>
                                         </a>
                                     </div>
@@ -339,7 +339,7 @@ const Portfolio = () => {
 
                                 <div className='sider_my'>
                                     <p className='slider_my_t'>
-                                        메인 페이지, 이벤트 상세 조회 페이지, 별점&댓글 기능 페이지, 마이 페이지(즐겨 찾기,댓글 관리), 채팅 페이지 레이아웃 구상 및 프론트엔드 작업
+                                        메인 페이지, 이벤트 상세 조회 페이지, 별점&댓글 기능 페이지, 마이 페이지(즐겨 찾기,댓글 관리), 채팅 페이지 레이아웃 구상 및 퍼블리싱 작업
                                     </p>
                                 </div>
 
@@ -358,7 +358,7 @@ const Portfolio = () => {
                                     */}
 
                                     <div className='notion_box'>
-                                        <a href='https://abundant-cyclamen-76a.notion.site/36665d27d037486895b26220a1fbbbe6?pvs=4' target='_blank' rel='noopener noreferrer' alt='노션 이동하기' title='노션 이동하기'>
+                                        <a href='https://abundant-cyclamen-76a.notion.site/b6dbc76f467f416cbd250d7a74fcd5c1?pvs=4' target='_blank' rel='noopener noreferrer' title='노션 이동하기'>
                                             <span className='notion_text'>노션 바로가기</span>
                                         </a>
                                     </div>
@@ -394,7 +394,7 @@ const Portfolio = () => {
 
                                 <div className='sider_my'>
                                     <p className='slider_my_t'>
-                                        유튜브 API를 활용하여 데이터 연결후 메인 화면에 인기 있는 한국 지역 영상 리스트 제공 할 수 있도록 프론트엔드 작업
+                                        유튜브 API를 활용하여 데이터 연결후 메인 화면에 인기 있는 한국 지역 영상 리스트 제공 할 수 있도록 퍼블리싱 작업
                                     </p>
                                 </div>
 
@@ -413,7 +413,7 @@ const Portfolio = () => {
                                     */}
 
                                     <div className='notion_box'>
-                                        <a href='https://abundant-cyclamen-76a.notion.site/792e87e117074d1cbe0540369a9f827a?pvs=4' target='_blank' rel='noopener noreferrer' alt='노션 이동하기' title='노션 이동하기'>
+                                        <a href='https://abundant-cyclamen-76a.notion.site/917f54cf1193424f8a5cec271fecee0a?pvs=4' target='_blank' rel='noopener noreferrer' title='노션 이동하기'>
                                             <span className='notion_text'>노션 바로가기</span>
                                         </a>
                                     </div>
@@ -448,7 +448,7 @@ const Portfolio = () => {
 
                                 <div className='sider_my'>
                                     <p className='slider_my_t'>
-                                        메인 페이지, 서브 페이지, 회원 가입, 로그인, 아이디 찾기, 비밀번호 찾기, 회원 정보 수정 등 전체적인 레이아웃 구상 및 프론트엔드 작업
+                                        메인 페이지, 서브 페이지, 회원 가입, 로그인, 아이디 찾기, 비밀번호 찾기, 회원 정보 수정 등 전체적인 레이아웃 구상 및 퍼블리싱 작업
                                     </p>
                                 </div>
 
@@ -466,7 +466,7 @@ const Portfolio = () => {
                                     */}
 
                                     <div className='notion_box'>
-                                        <a href='https://abundant-cyclamen-76a.notion.site/Look-For-Weather-265fef8dec5b4462ba9360bf570ba1eb?pvs=4' target='_blank' rel='noopener noreferrer' alt='노션 이동하기' title='노션 이동하기'> 
+                                        <a href='https://abundant-cyclamen-76a.notion.site/Look-For-Weather-c45dfbdbeae1460794be8af841629bf9?pvs=4' target='_blank' rel='noopener noreferrer' title='노션 이동하기'> 
                                             <span className='notion_text'>노션 바로가기</span>
                                         </a>
                                     </div>
@@ -521,7 +521,7 @@ const Portfolio = () => {
                                     </div>
 
                                     <div className='notion_box'>
-                                        <a href='https://abundant-cyclamen-76a.notion.site/32e72417161a43b0a3c27f8e354fb995?pvs=4' target='_blank' rel='noopener noreferrer' alt='노션 이동하기' title='노션 이동하기'
+                                        <a href='https://abundant-cyclamen-76a.notion.site/a4c8160ec88849f3b43eb51fc70a36fc?pvs=4' target='_blank' rel='noopener noreferrer' title='노션 이동하기'
 >
                                             <span className='notion_text'>노션 바로가기</span>
                                         </a>
@@ -570,7 +570,7 @@ const Portfolio = () => {
                                     </div>
 
                                     <div className='notion_box'>
-                                        <a href='https://abundant-cyclamen-76a.notion.site/c143d580e2ef45a69e77f8885851786e?pvs=4' target='_blank' rel='noopener noreferrer' alt='노션 이동하기' title='노션 이동하기'
+                                        <a href='https://abundant-cyclamen-76a.notion.site/427c9599739c49c185468eac4db6653a?pvs=4' target='_blank' rel='noopener noreferrer' title='노션 이동하기'
 >
                                             <span className='notion_text'>노션 바로가기</span>
                                         </a>
@@ -620,7 +620,7 @@ const Portfolio = () => {
                                     </div>
 
                                     <div className='notion_box'>
-                                        <a href='https://abundant-cyclamen-76a.notion.site/c8278e517f4d4691bf10c155997679ed?pvs=4' target='_blank' rel='noopener noreferrer' alt='노션 이동하기' title='노션 이동하기'
+                                        <a href='https://abundant-cyclamen-76a.notion.site/1af9714bd28f4b20a1bb82497918dec8?pvs=4' target='_blank' rel='noopener noreferrer' title='노션 이동하기'
 >
                                             <span className='notion_text'>노션 바로가기</span>
                                         </a>
@@ -670,7 +670,7 @@ const Portfolio = () => {
                                     </div>
 
                                     <div className='notion_box'>
-                                        <a href='https://abundant-cyclamen-76a.notion.site/e1da866d10b5433db64030a67482c9c6?pvs=4' target='_blank' rel='noopener noreferrer' alt='노션 이동하기' title='깃헙 이동하기'>
+                                        <a href='https://abundant-cyclamen-76a.notion.site/54a8bfa746d847d7a315070f8c0c5d8d?pvs=4' target='_blank' rel='noopener noreferrer' title='깃헙 이동하기'>
                                             <span className='notion_text'>노션 바로가기</span>
                                         </a>
                                     </div>
