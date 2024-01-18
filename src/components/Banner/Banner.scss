@@ -1,0 +1,87 @@
+@import '~include-media/dist/include-media';
+
+.banner {
+	width: 100%;
+	height: auto;
+	position: relative;
+	overflow: hidden !important;
+	padding-left: 5rem;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+	// background: #fff;
+	display:none;
+}
+
+
+
+/*=========================================================
+    페이지 접속 시 커서 오버 이벤트 정의
+=========================================================*/
+#cover {
+	background: #e7e7e7;
+	z-index: 9999999;
+	position: fixed;
+	top: 0%;
+	left: -25%;
+	width: 150%;
+	height: 100%;
+	transform-origin: left;
+}
+
+
+#cover.cover_left {
+	animation: coverleft 2000ms both cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@keyframes coverleft {
+	0% {
+		transform: scaleX(1) skewX(30deg);
+		transform-origin: left;
+	}
+
+	100% {
+		transform: scaleX(0) skewX(30deg);
+		transform-origin: left;
+	}
+}
+
+
+
+
+/*=========================================================
+    배너 배경 정의
+=========================================================*/
+.intro_sec {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	color: #f9f9f9;
+	font-weight: 400;
+	// background:url('./img/b_background.jpg') left top/100% 100% no-repeat;
+	background: #141414;
+}
+
+
+
+/*=========================================================
+    반응형 기준점 정의
+    1251, 901
+=========================================================*/
+@include media('<1251px') {
+	#cover {
+		display: none;
+	}
+}
+
+
+@include media('<901px') {
+	#cover {
+		display: none;
+	}
+
+	.banner {
+		padding-left: 0;
+	}
+}

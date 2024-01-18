@@ -1,0 +1,327 @@
+@import '~include-media/dist/include-media';
+
+/*=========================================================
+    사이드바 정의
+=========================================================*/
+.left_nav{
+    position:fixed;
+    left:0;
+    top:0;
+    width:5rem;
+    height:100vh;
+    background:#BABABA;
+    border-right:1px solid #a2a2a2;
+    padding:5rem 0;
+    transition: all 0.4s;
+    z-index:100;
+}
+
+
+/*=========================================================
+    로고 (B) 정의 
+=========================================================*/
+.nav_logo{
+    position:absolute;
+    top:5rem;
+    left:50%;
+    transform:translateX(-50%);
+    font-size:1.3rem;
+    color:#111;
+    font-family: 'Tenada';
+	border:3px solid #111;
+    border-radius: 10px;
+    width:40px;
+    height:40px;
+	text-align: center;
+	line-height: 42px;
+
+}
+
+
+/*=========================================================
+    
+=========================================================*/
+.hamburger_menu {
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	z-index:100;
+}
+
+
+/*=========================================================
+    Portfolio 텍스트 정의
+=========================================================*/
+.nav_text {
+	position:absolute;
+	letter-spacing:0.07rem;
+	// bottom:5rem;
+	bottom:8rem;
+	left:50%;
+	transform:translateX(-50%) rotate(-90deg);
+	margin-bottom:1.2%;
+	margin-bottom:1.78rem;
+	font-size:1.2rem;
+	font-weight:500;
+	color: #111;
+
+	width:200px;
+}
+
+.nav_text p{
+    font-family: 'Chosunilbo_myungjo';
+}
+
+
+/*=========================================================
+    햄버거 메뉴 정의
+=========================================================*/
+.icon_wrap {
+	position:fixed;
+	left:2.9rem;
+	top:50%;
+	cursor:pointer;
+	width:2.1rem;
+	height:1.5rem;
+	transform:rotate(-90deg) translateY(-50%);
+	z-index:1000;
+}
+
+.icon, .icon:before, .icon:after {
+	width:2.1rem;
+	height:0.13rem;
+	background:#000;
+}
+
+
+.icon, .iconAnimation {
+	position:relative;
+	transition:all 300ms;
+}
+
+
+
+
+.iconAnimation {
+	background:rgba(245,245,245,0);
+}
+
+
+
+/*=========================================================
+    햄버거 메뉴 첫번째 라인 정의
+=========================================================*/
+.icon:before {
+	content:"";
+	position:absolute;
+	left:0;
+	bottom:0.4rem;
+	transition:bottom 300ms 300ms cubic-bezier(0.23,1,0.32,1),transform 300ms cubic-bezier(0.23,1,0.32,1);
+}
+
+// 햄버거 메뉴 클릭 시 변경되는 방식 정의
+.iconAnimation:before {
+	bottom:0;
+	transform:rotate(45deg);
+	transition:bottom 300ms cubic-bezier(0.23,1,0.32,1),transform 300ms 300ms cubic-bezier(0.23,1,0.32,1);
+	background:#1B191C;
+}
+
+
+/*=========================================================
+    햄버거 메뉴 세번째 라인 정의
+=========================================================*/
+.icon:after {
+	content:"";
+	position:absolute;
+	left:0;
+	top:0.4rem;
+	transition:top 300ms 300ms cubic-bezier(0.23,1,0.32,1),transform 300ms cubic-bezier(0.23,1,0.32,1);
+}
+
+// 햄버거 메뉴 클릭 시 변경되는 방식 정의
+.iconAnimation:after {
+	top:0;
+	transform:rotate(-45deg);
+	transition:top 300ms cubic-bezier(0.23,1,0.32,1),transform 300ms 300ms cubic-bezier(0.23,1,0.32,1);
+	background: #1B191C;
+}
+
+
+/*=========================================================
+    오버레이 정의
+=========================================================*/
+.overlay {
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:-100%;
+	left:0;
+	background-color:#1B191C;
+	z-index:100;
+	transform:translate(0,0);
+	overflow:hidden;
+}
+
+.overlay:before {
+	content:"";
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	margin:auto;
+	width:100%;
+	height:0;
+	background:#f9f9f9;
+	border-radius:100%;
+	padding-bottom:100%;
+	transform:scale(0.04) translateY(9999px);
+	overflow:hidden;
+}
+
+
+/*=========================================================
+    오버레이 open 정의
+=========================================================*/
+.open header{
+	display:none;
+}
+
+.open .overlay {
+	top:0;
+}
+
+.open .overlay:before {
+	animation:menu-animation 0.8s ease-in-out forwards;
+}
+
+@keyframes menu-animation {
+	0% {
+		transform:scale(0.04) translatey(300%);
+		opacity:0;
+	}
+	40% {
+		transform:scale(0.04) translatey(0);
+		transition:ease-out;
+	}
+	60% {
+		transform:scale(0.02) translatey(0);
+		opacity:1;
+	}
+	61% {
+		transform:scale(0.04);
+	}
+	99.9% {
+		height:0;
+		padding-bottom:100%;
+		border-radius:100%;
+	}
+	100% {
+		transform:scale(2);
+		height:100%;
+		padding-bottom:0;
+		border-radius:0;
+	}
+}
+
+
+/*=========================================================
+    오버레이 close 정의
+=========================================================*/
+.close .overlay {
+	top:-100%;
+}
+
+
+.close .overlay::before {
+	animation:menu-animation2 0.8s ease-in-out forwards;
+}
+
+
+/*=========================================================
+    오버레이 menu 정의
+=========================================================*/
+.menu {
+	position:fixed;
+	top:45%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	color:#1B191C;
+	z-index:2;
+}
+
+.menu li {
+	opacity:1;
+	text-align:center;
+	font-size:5vw;
+	font-weight:700;
+	line-height:1.5;
+	text-transform:uppercase;
+	font-family: 'Tenada';
+	transform:translatey(30px);
+	padding:0 20px;
+}
+
+.menu li a{
+	color:#1B191C;	
+}
+
+
+
+.menu li h2{
+    font-family: 'Tenada';
+}
+
+
+//  모바일 로고 관련 정의
+.m_navi{
+	width:100%;
+	position:fixed;
+	top:0;
+	width:100%;
+	padding:0.9rem;
+	background:#BABABA;
+	display:none;
+}
+
+
+
+/*=========================================================
+    반응형 기준점 정의
+    901
+=========================================================*/
+@include media('<901px'){
+	// PC 사이드바 숨김
+	.left_nav {
+		display:none;
+	}
+
+	// 모바일 사이드바 오픈
+	.m_navi{
+		display:block;
+		z-index: 99;
+	}
+
+	.m_nav-logo{
+		text-align:left;
+		margin-left:4%;
+		font-size:1.5rem;
+		font-family: 'Tenada';
+		font-weight:800;
+		color:#000;		
+		position: relative;
+		top:5px;
+	}
+
+	.icon_wrap {
+		position:fixed;
+		left:90%;
+		top:1.8rem;
+		width:2.1rem;
+		height:1.6rem;
+		transform:rotate(0deg) translateY(0);
+	}
+}
+

@@ -1,0 +1,502 @@
+@import '~include-media/dist/include-media';
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+.fp-overflow {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/*=========================================================
+    About 컨테이너 정의
+=========================================================*/
+.about_container {
+    width: 100%;
+    height: 100vh;
+    // background:#f9f9f9;
+    background: #f5f5f5;
+}
+
+.aboutContant_inner {
+    width: 1800px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-top: 3%;
+}
+
+// 타이틀
+.about_title {
+    font-family: 'Chosunilbo_myungjo';
+    font-size: 36px;
+}
+
+.about_hello {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+}
+
+
+
+
+/*=========================================================
+    왼쪽 레이아웃 정의
+=========================================================*/
+.about_left {
+    width: 50%;
+    // height:20vw;
+}
+
+.about_left img {
+    width: 100%;
+}
+
+
+/*=========================================================
+    오른쪽 레이아웃 정의
+=========================================================*/
+.about_right {
+    width: 80%;
+}
+
+.av_p {
+    font-family: 'Chosunilbo_myungjo';
+    font-size: 30px;
+    line-height: 1.8;
+}
+
+.av_1,
+.av_2 {
+    margin-top: 1.5rem;
+}
+
+
+// 호버 시 border-bottom 정의
+.hv_text {
+    font-family: 'Chosunilbo_myungjo';
+    line-height: 1.4;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid #505050;
+    font-weight: 500;
+}
+
+.hv_text::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    height: 100%;
+    border-bottom: 2px solid #000;
+    width: 0;
+}
+
+.hv_text:hover::before {
+    width: 100%;
+}
+
+
+/*=========================================================
+    이력서 다운로드
+=========================================================*/
+.download_inner {
+    // margin-top: 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+.download_btn {
+    width: 150px;
+    height: 50px;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all .3s;
+    font-size: 14px;
+    font-family: 'Chosunilbo_myungjo';
+    color: #000;
+    font-weight: 600;
+    border: 1px solid #ddd;
+    padding: 20px 30px;
+}
+
+.download_btn:hover {
+    border: 1px solid #000;
+    background: #000;
+    color: #fff;
+}
+
+.myintro_box {
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all .3s;
+    font-family: 'Chosunilbo_myungjo';
+    padding: 15px 25px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+// 사이트 버튼 정의
+.myintro_box a {
+    display: flex;
+    align-items: center;
+    background: url(./img/myintro_b.png) no-repeat;
+    background-size: 20%;
+    background-position: left;
+    height: 30px;
+}
+
+.site_text {
+    margin-left: 30px;
+    font-family: 'Chosunilbo_myungjo';
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+//  사이트 버튼 호버 정의
+.myintro_box:hover {
+    border: 1px solid #000;
+    background: #000;
+}
+
+.myintro_box:hover a {
+    background: url(./img/myintro_w.png) no-repeat;
+    background-size: 20%;
+    background-position: left;
+}
+
+.myintro_box:hover .site_text {
+    color: #fff;
+}
+
+
+/*=========================================================
+    About 페이지 도달 시 이미지 애니메이션 정의
+=========================================================*/
+.about_left {
+    opacity: 0;
+    transform: translateX(-10%);
+    transition: .8s;
+}
+
+.about_left.active_about_l {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.1s;
+}
+
+
+/*=========================================================
+    About 페이지 도달 시 텍스트 애니메이션 정의
+=========================================================*/
+.about_right {
+    opacity: 0;
+    transform: translateX(10%);
+    transition: .8s;
+}
+
+.about_right.active_about_r {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+
+
+
+/*=========================================================
+    반응형 기준점 정의
+    2001, 1801, 1441, 1281, 1251, 1101, 
+    1001, 901, 701, 545, 501
+=========================================================*/
+@include media('<2001px') {
+    .aboutContant_inner {
+        width: 83%;
+        height: calc(100vh - 250px);
+        margin-top: 4%;
+    }
+
+    // 어바웃 타이틀 문구
+    .about_title {
+        font-size: 32px;
+    }
+
+    // 어바웃 상세 내용
+    .av_p {
+        font-size: 24px;
+    }
+}
+
+
+@include media('<1801px') {
+    .aboutContant_inner {
+        width: 78%;
+        gap: 70px;
+    }
+
+    // 어바웃 타이틀 문구
+    .about_title {
+        font-size: 28px;
+    }
+
+    // 어바웃 상세 내용
+    .av_p {
+        font-size: 22px;
+    }
+
+    // 버튼
+    .download_btn {
+        width: 120px;
+    }
+}
+
+
+@include media('<1441px') {
+    .aboutContant_inner {
+        gap: 50px;
+    }
+
+    .about_left {
+        width: 60%;
+    }
+
+    // 어바웃 타이틀 문구
+    .about_title {
+        font-size: 24px;
+    }
+
+    // 어바웃 상세 내용
+    .av_p {
+        font-size: 18px;
+    }
+
+    .download_btn {
+        padding: 15px 20px;
+    }
+
+    .download_btn {
+        font-size: 12px;
+    }
+
+    // 버튼 관련 정의
+    .myintro_box {
+        padding: 10px;
+    }
+
+}
+
+
+@include media('<1281px') {
+    .aboutContant_inner {
+        margin-top: 7%;
+    }
+
+    // 어바웃 타이틀 문구
+    .about_title {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+
+    .av_1,
+    .av_2 {
+        margin-top: 1.2rem;
+    }
+}
+
+
+@include media('<1251px') {
+
+    // 어바웃 타이틀 문구
+    .about_title {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    // 어바웃 상세 내용
+    .av_p {
+        font-size: 16px;
+    }
+
+    .av_1,
+    .av_2 {
+        margin-top: 1.2rem;
+    }
+
+    // 버튼
+    .download_btn {
+        width: 100px;
+        font-size: 10px;
+    }
+
+    .download_inner {
+        margin-top: 1.8rem;
+        margin-bottom: 0;
+    }
+}
+
+
+@include media('<1101px') {
+    .header_gnb {
+        width: 500px;
+    }
+
+    .about_left {
+        width: 100%;
+    }
+
+    // 어바웃 상세 내용
+    .av_p {
+        font-size: 14px;
+    }
+
+    .myintro_box:hover a{
+        background-size: 15%;
+    }
+}
+
+
+@include media('<1025px') {
+    .myintro_box {
+        padding: 5px;
+    }
+}
+
+
+@include media('<1001px') {
+    .header_gnb {
+        width: 450px;
+    }
+
+    .aboutContant_inner {
+        width: 74%;
+    }
+
+    .av_1,
+    .av_2 {
+        margin-top: 0.5rem;
+    }
+}
+
+
+@include media('<901px') {
+
+    // 원페이지 앵커 정의
+    #fp-nav.fp-right {
+        right: 9px;
+    }
+
+    .aboutContant_inner {
+        width: 90%;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 0;
+        height: calc(100vh - 180px);
+    }
+
+    .about_left,
+    .about_right {
+        width: 65%;
+    }
+
+    .about_title {
+        font-size: 20px;
+    }
+
+    .av_p {
+        font-size: 18px;
+    }
+
+    .download_btn {
+        padding: 12px 15px;
+        font-size: 10px;
+    }
+
+    .download_inner {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about_left,
+    .about_left.active_about_l {
+        opacity: 1;
+        transform: none;
+        text-align: center;
+    }
+
+    .about_right,
+    .about_right.active_about_r {
+        opacity: 1;
+        transform: none;
+    }
+
+    .myintro_box {
+        padding: 10px 20px;
+    }
+}
+
+
+@include media('<701px') {
+
+    .about_left,
+    .about_right {
+        width: 90%;
+    }
+}
+
+
+@include media('<545px') {
+    #fp-nav.fp-right {
+        right: 0;
+    }
+}
+
+
+@include media('<501px') {
+
+    // 추가
+    .aboutContant_inner {
+        margin-top: 0;
+    }
+
+    .about_left,
+    .about_right {
+        width: 95%;
+    }
+
+    .about_title {
+        font-size: 16px;
+    }
+
+    .av_p {
+        font-size: 14px;
+    }
+
+    .icon,
+    .icon:before,
+    .icon:after {
+        width: 1.5rem;
+    }
+
+    .myintro_box{
+        padding:5px 10px;
+    }
+}
+
+
+@include media('<361px') {
+    .aboutContant_inner {
+        height: calc(100vh - 150px);
+    }
+
+    .about_title {
+        font-size: 20px;
+    }
+}

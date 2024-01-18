@@ -1,0 +1,227 @@
+@import '~include-media/dist/include-media';
+
+
+.scroll__container {
+    position: fixed;
+    // right: 3.5%;
+    // bottom: 5%;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+}
+
+// #top_btn {
+//     display: none;
+//     font-weight: bold;
+//     font-size: 14px;
+//     padding: 15px 10px;
+//     background: #000;
+//     border:1px solid #000;
+//     color: #fff;
+//     border-radius: 50%;
+//     outline: none;
+//     cursor: pointer;
+//     font-family: 'Chosunilbo_myungjo';
+// }
+
+
+
+// #top_btn:hover {
+//     color:#fff;
+//     background:#6b60e5;
+//     border:1px solid #6b60e5;
+// }
+
+
+
+// @include media('<501px'){
+//     #top_btn{
+//         font-size:12px;
+//         padding:10px 5px;
+//     }
+// }
+
+
+// @include media('<361px') {
+//     #top_btn{
+//         font-size:10px;
+//     }
+// }
+
+
+
+
+.ball .plus_top {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 200ms cubic-bezier(0.25, 0.75, 0.5, 1.25);
+}
+
+.ball.active .plus_top {
+    transform: rotate(225deg);
+    cursor: pointer;
+}
+
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background: #6b60e5;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    overflow: hidden;
+    transition: all 200ms cubic-bezier(0.25, 0.75, 0.5, 1.25);
+}
+
+.ball:before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+    // background: #b90c35;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    cursor: pointer;
+}
+
+.ball:hover {
+    cursor: pointer;
+}
+
+.ball.active {
+    width: 200px;
+    height: 200px;
+    bottom: -65px;
+    right: -65px;
+}
+
+.ball.active:hover {
+    cursor: default;
+}
+
+.ball.active:before {
+    opacity: 1;
+}
+
+.ball span {
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    margin: auto;
+    // transition: all 200ms cubic-bezier(0.25, 0.75, 0.5, 1.25);
+    opacity: 0;
+}
+
+// TOP
+.ball span.first {
+    top: -40px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Tenada';
+}
+
+// 노션
+.ball span.second {
+    left: 40px;
+    top: 40px;
+}
+
+// 깃헙
+.ball span.third {
+    left: -50px;
+    top: 10px;
+    bottom: 0;
+}
+
+
+.ball.active .first {
+    top: 25px;
+    opacity: 1;
+    letter-spacing: 1px;
+}
+
+.ball.active .second {
+    // top: 45px;
+    // left: 40px;
+    opacity: 1;
+
+    top:6px;
+    left:85px;
+}
+
+.ball.active .third {
+    // left: 20px;
+    opacity: 1;
+
+    left:25px;
+    top:-15px;
+}
+
+.gg_t{
+    font-size:10px;
+    font-weight: 300;
+    font-family: 'Chosunilbo_myungjo';
+    position: relative;
+    top:-4px;
+    left:3px;
+}
+
+.nn_t{
+    font-size:10px;
+    font-weight: 300;
+    font-family: 'Chosunilbo_myungjo';   
+    position: relative; 
+    left:2px;
+}
+
+
+@include media('<501px'){
+    .ball, .ball:before{
+        width:30px;
+        height:30px;
+    }
+
+
+
+    .ball .plus_top{
+        width:10px;
+        height:10px;
+    }
+
+    .ball span{
+        width:25px;
+        height:25px;
+    }
+
+    .ball.active .third{
+        left:35px;
+    }
+
+    .gg_t{
+        left:-2px;
+    }
+
+    .ball.active .second{
+        top:12px;
+    }
+
+    .nn_t{
+        left:-2px;
+    }
+}

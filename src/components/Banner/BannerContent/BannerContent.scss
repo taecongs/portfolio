@@ -1,0 +1,576 @@
+@import '~include-media/dist/include-media';
+
+/*=========================================================
+    배너 정의
+=========================================================*/
+article {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	z-index: 300;
+	color: #fff;
+}
+
+
+/*=========================================================
+    배너 세부 정의
+=========================================================*/
+.bannerContant_inner {
+	width: 1800px;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+/*=========================================================
+    배너 타이틀
+=========================================================*/
+.banner_title {
+	// margin-left: 37px;
+	margin-left: -230px;
+	font-size: 7.5rem;
+	font-family: 'Tenada';
+	letter-spacing: 10px;
+}
+
+
+/*=========================================================
+    배너 서브 타이틀
+=========================================================*/
+.banner_p {
+	margin-left: -40px;
+	font-size: 16px;
+	opacity: 0;
+	font-family: 'Chosunilbo_myungjo';
+	letter-spacing: 1px;
+	animation: textup 1s ease-in-out forwards;
+	animation-delay: 6s;
+}
+
+@keyframes textup {
+	0% {
+		transform: translatey(50%);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translatey(0%);
+		opacity: 1;
+	}
+}
+
+
+
+/*=========================================================
+    배너 원 정의
+=========================================================*/
+.banner_bg {
+	position: absolute;
+}
+
+.ball1, .ball2 {
+	display: block;
+	width: 900px;
+	height: 900px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.ball1 {
+	opacity: 0.07;
+	position: relative;
+	right: -1700px;
+	bottom: -800px;
+	animation: ball1-1 3s linear infinite alternate;
+	// animation: none;
+}
+
+
+.ball2 {
+	opacity: 0.15;
+	position: relative;
+	right: -1090px;
+	bottom: -150px;
+	animation: ball1-2 3s linear infinite alternate;
+	// animation: none;
+}
+
+@keyframes ball1-1 {
+	0% {
+		right: -1620px;
+		bottom: -770px;
+	}
+
+	50% {
+		right: -1660px;
+		bottom: -785px;
+	}
+
+	100% {
+		right: -1700px;
+		bottom: -800px;
+	}
+}
+
+@keyframes ball1-2 {
+	0% {
+		right: -1090px;
+		bottom: -150px;
+	}
+
+	50% {
+		right: -1080px;
+		bottom: -135px;
+	}
+
+	100% {
+		right: -1070px;
+		bottom: -120px;
+	}
+}
+
+
+.banner_detail {
+	position: absolute;
+	left: 50%;
+	top: 95%;
+	transform: translateX(-50%);
+	font-size: 13px;
+	letter-spacing: 1px;
+	color: #fff;
+	text-align: center;
+	font-family: 'Chosunilbo_myungjo';
+}
+
+
+.mob_b {
+	display: none;
+}
+
+
+
+/*=========================================================
+    반응형 기준점 정의
+    2001, 1801, 1441, 1281, 1251, 1025, 1001, 901, 501
+=========================================================*/
+@include media('<2001px') {
+	.bannerContant_inner {
+		width: 86%;
+	}
+
+	.banner_title {
+		font-size: 6rem;
+		margin-left: -203px;
+	}
+
+	.banner_p {
+		margin-left: -40px;
+	}
+
+	.banner_detail {
+		line-height: 1.5;
+	}
+
+
+	.ball1, .ball2 {
+		width: 750px;
+		height: 750px;
+
+	}
+
+	.ball1 {
+		right: -1300px;
+		bottom: -650px;
+		animation: ball1-1 3s linear infinite alternate;
+	}
+
+
+	.ball2 {
+		right: -890px;
+		bottom: -130px;
+		animation: ball1-2 3s linear infinite alternate;
+	}
+
+	@keyframes ball1-1 {
+		0% {
+			right: -1220px;
+			bottom: -620px;
+		}
+
+		50% {
+			right: -1260px;
+			bottom: -635px;
+		}
+
+		100% {
+			right: -1300px;
+			bottom: -650px;
+		}
+	}
+
+	@keyframes ball1-2 {
+		0% {
+			right: -890px;
+			bottom: -130px;
+		}
+
+		50% {
+			right: -880px;
+			bottom: -115px;
+		}
+
+		100% {
+			right: -870px;
+			bottom: -100px;
+		}
+	}
+}
+
+
+@include media('<1801px') {
+	.banner_title {
+		font-size: 5.5rem;
+		margin-left: -149px;
+	}
+
+	.banner_p {
+		margin-left: 3px;
+	}
+
+	.ball1, .ball2 {
+		width: 700px;
+		height: 700px;
+	}
+
+	.ball1 {
+		right: -1170px;
+		bottom: -630px;
+		animation: ball1-1 3s linear infinite alternate;
+	}
+
+
+	.ball2 {
+		right: -790px;
+		bottom: -120px;
+		animation: ball1-2 3s linear infinite alternate;
+	}	
+
+	@keyframes ball1-1 {
+		0% {
+			right: -1090px;
+			bottom: -600px;
+		}
+
+		50% {
+			right: -1130px;
+			bottom: -615px;
+		}
+
+		100% {
+			right: -1170px;
+			bottom: -630px;
+		}
+	}
+
+	@keyframes ball1-2 {
+		0% {
+			right: -790px;
+			bottom: -120px;
+		}
+
+		50% {
+			right: -780px;
+			bottom: -105px;
+		}
+
+		100% {
+			right: -770px;
+			bottom: -90px;
+		}
+	}	
+}
+
+
+@include media('<1441px') {
+	.ball1, .ball2 {
+		width: 600px;
+		height: 600px;
+	}
+
+	.ball1 {
+		right: -970px;
+		bottom: -600px;
+		animation: ball1-1 3s linear infinite alternate;
+		// animation:none;
+	}
+
+
+	.ball2 {
+		right: -620px;
+		bottom: -120px;
+		animation: ball1-2 3s linear infinite alternate;
+		// animation: none;
+	}	
+	
+	@keyframes ball1-1 {
+		0% {
+			right: -890px;
+			bottom: -570px;
+		}
+
+		50% {
+			right: -930px;
+			bottom: -585px;
+		}
+
+		100% {
+			right: -970px;
+			bottom: -600px;
+		}
+	}
+
+	@keyframes ball1-2 {
+		0% {
+			right: -620px;
+			bottom: -120px;
+		}
+
+		50% {
+			right: -610px;
+			bottom: -105px;
+		}
+
+		100% {
+			right: -600px;
+			bottom: -90px;
+		}
+	}		
+}
+
+
+@include media('<1281px'){
+	.banner_title{
+		margin-left:-177px;
+	}
+
+	.banner_detail{
+		font-size:11px;
+	}
+
+	.banner_p{
+		margin-left:-24px;
+	}
+}
+
+
+@include media('<1251px') {
+	.banner_title {
+		font-size: 5rem;
+		margin-left: -162px;
+	}
+
+	.banner_p {
+		margin-left: -19px;
+	}
+
+	.banner_detail {
+		top: 92%;
+	}
+
+	.ball1, .ball2 {
+		width: 550px;
+		height: 550px;
+	}
+
+	.ball1 {
+		right: -800px;
+		bottom: -650px;
+		animation: ball1-1 3s linear infinite alternate;
+	}
+
+
+	.ball2 {
+		right: -440px;
+		bottom: -210px;
+		animation: ball1-2 3s linear infinite alternate;
+	}	
+	
+	@keyframes ball1-1 {
+		0% {
+			right: -720px;
+			bottom: -620px;
+		}
+
+		50% {
+			right: -760px;
+			bottom: -635px;
+		}
+
+		100% {
+			right: -800px;
+			bottom: -650px;
+		}
+	}
+
+	@keyframes ball1-2 {
+		0% {
+			right: -440px;
+			bottom: -210px;
+		}
+
+		50% {
+			right: -430px;
+			bottom: -195px;
+		}
+
+		100% {
+			right: -420px;
+			bottom: -180px;
+		}
+	}		
+}
+
+@include media('<1025px') {
+	.banner_title {
+		font-size: 4rem;
+		margin-left: -150px;
+	}
+
+	.banner_p {
+		margin-left: -25px;
+	}
+
+	.ball1 {
+		right: -520px;
+		bottom: -680px;
+		animation: ball1-1 3s linear infinite alternate;
+	}
+
+
+	.ball2 {
+		right: -200px;
+		bottom: -260px;
+		animation: ball1-2 3s linear infinite alternate;
+	}	
+
+	@keyframes ball1-1 {
+		0% {
+			right: -440px;
+			bottom: -650px;
+		}
+
+		50% {
+			right: -480px;
+			bottom: -665px;
+		}
+
+		100% {
+			right: -520px;
+			bottom: -680px;
+		}
+	}
+
+	@keyframes ball1-2 {
+		0% {
+			right: -200px;
+			bottom: -260px;
+		}
+
+		50% {
+			right: -190px;
+			bottom: -245px;
+		}
+
+		100% {
+			right: -180px;
+			bottom: -230px;
+		}
+	}		
+}
+
+
+@include media('<1001px') {
+	.banner_title {
+		font-size: 4rem;
+		margin-left: -130px;
+	}
+
+	.banner_p {
+		margin-left: -4px;
+	}
+
+	.banner_bg {
+		display: none;
+	}
+}
+
+
+@include media('<901px') {
+	.bannerContant_inner {
+		width: 90%;
+		text-align: center;
+	}
+
+	.mob_b {
+		display: block;
+	}
+
+	.pc_b {
+		display: none !important;
+	}
+
+	.banner_title {
+		margin-left: 0;
+		font-size: 3.5rem;
+		letter-spacing: 0;
+	}
+
+	.banner_p {
+		margin-left: 0;
+		margin-top: 10px;
+		font-size: 14px;
+		animation-delay: 4.5s;
+	}
+
+	.banner_detail {
+		top: 92%;
+		line-height: 1.5;
+	}
+
+}
+
+
+@include media('<501px') {
+	.banner_title {
+		margin-left: 0;
+		font-size: 2.5rem;
+		letter-spacing: 0;
+	}
+
+	.banner_p {
+		margin-left: 0;
+		font-size: 12px;
+	}
+
+	.banner_detail {
+		font-size: 10px;
+		top:93.5%;
+	}
+}
+
+
+@include media('<361px') {
+	.banner_title{
+		font-size:2rem;
+	}
+
+	.banner_p{
+		font-size:10px;
+	}
+
+	.banner_detail{
+		letter-spacing: -0.05px;
+		top:93%;
+	}
+}

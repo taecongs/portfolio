@@ -1,0 +1,964 @@
+@import '~include-media/dist/include-media';
+
+*::-webkit-scrollbar {
+	display: none;
+}
+
+.fp-overflow {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/*=========================================================
+    skill 컨테이너 정의
+=========================================================*/
+.skill_container {
+    width: 100%;
+    height: 100vh;
+    background: #f5f5f5;
+}
+
+.skillContant_inner {
+    width: 1800px;
+    // height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+.skill_card {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    padding: 20px 20px 10px 20px;
+    width: 17.5rem;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    cursor:default;
+}
+
+
+.down_1 {
+    top: 75%;
+}
+
+
+
+/*=========================================================
+    각 스킬명 배경색 지정
+=========================================================*/
+// HTML
+.skill_card .skill_card_header_1 {
+    position: relative;
+    background-color: #eb6c3f;
+    height: 210px;
+    margin: -20px -20px 20px -20px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+// CSS
+.skill_card .skill_card_header_2 {
+    position: relative;
+    background-color: #2465f1;
+    height: 210px;
+    margin: -20px -20px 20px -20px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+// 자바스크립트
+.skill_card .skill_card_header_3 {
+    position: relative;
+    background-color: #f9d506;
+    height: 210px;
+    margin: -20px -20px 20px -20px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+// 제이쿼리
+.skill_card .skill_card_header_4 {
+    position: relative;
+    background-color: #1e2e3b;
+    height: 210px;
+    margin: -20px -20px 20px -20px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+// 부트스트랩
+.skill_card .skill_card_header_5 {
+    position: relative;
+    background-color: #ddc1fc;
+    height: 210px;
+    margin: -20px -20px 20px -20px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+// 리엑트
+.skill_card .skill_card_header_6 {
+    position: relative;
+    background-color: #282c35;
+    height: 210px;
+    margin: -20px -20px 20px -20px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+// Sass
+.skill_card .skill_card_header_7 {
+    position: relative;
+    background-color: #eab8d1;
+    height: 210px;
+    margin: -20px -20px 20px -20px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+// Node.js
+.skill_card .skill_card_header_8 {
+    position: relative;
+    background-color: #80bd01;
+    height: 210px;
+    margin: -20px -20px 20px -20px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+// MySQL
+.skill_card .skill_card_header_9 {
+    position: relative;
+    background-color: #4479a1;
+    height: 210px;
+    margin: -20px -20px 20px -20px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+// Git
+.skill_card .skill_card_header_10 {
+    position: relative;
+    background-color: #e2d4b9;
+    height: 210px;
+    margin: -20px -20px 20px -20px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+// Slack
+.skill_card .skill_card_header_11 {
+    position: relative;
+    background-color: #3d0d25;
+    height: 210px;
+    margin: -20px -20px 20px -20px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+// Figma
+.skill_card .skill_card_header_12 {
+    position: relative;
+    background-color: #121631;
+    height: 210px;
+    margin: -20px -20px 20px -20px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+
+
+/*=========================================================
+    공통 정의
+=========================================================*/
+.skill_card_header_1 .skill_card_icon,
+.skill_card_header_2 .skill_card_icon,
+.skill_card_header_3 .skill_card_icon,
+.skill_card_header_4 .skill_card_icon,
+.skill_card_header_5 .skill_card_icon,
+.skill_card_header_6 .skill_card_icon,
+.skill_card_header_7 .skill_card_icon,
+.skill_card_header_8 .skill_card_icon,
+.skill_card_header_9 .skill_card_icon,
+.skill_card_header_10 .skill_card_icon,
+.skill_card_header_11 .skill_card_icon,
+.skill_card_header_12 .skill_card_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    display: block;
+    width: 128px;
+    height: 128px;
+    transition: transform 0.5s;
+}
+
+
+/*=========================================================
+    스킬 로고 이미지 작은 것들 width 값 정의
+=========================================================*/
+.wd_icon1 {
+    width: 160px !important;
+    height: 160px !important;
+}
+
+.wd_icon2 {
+    width: 180px !important;
+    height: 120px !important;
+}
+
+.wd_icon3 {
+    width: 200px !important;
+    height: 120px !important;
+}
+
+
+
+.skill_card:hover .skill_card_header_1,
+.skill_card:hover .skill_card_header_2,
+.skill_card:hover .skill_card_header_3,
+.skill_card:hover .skill_card_header_4,
+.skill_card:hover .skill_card_header_5,
+.skill_card:hover .skill_card_header_6,
+.skill_card:hover .skill_card_header_7,
+.skill_card:hover .skill_card_header_8,
+.skill_card:hover .skill_card_header_9,
+.skill_card:hover .skill_card_header_10,
+.skill_card:hover .skill_card_header_11,
+.skill_card:hover .skill_card_header_12 {
+    height: 0;
+}
+
+
+.skill_card:hover .skill_card_header_1 .skill_card_icon,
+.skill_card:hover .skill_card_header_2 .skill_card_icon,
+.skill_card:hover .skill_card_header_3 .skill_card_icon,
+.skill_card:hover .skill_card_header_4 .skill_card_icon,
+.skill_card:hover .skill_card_header_5 .skill_card_icon,
+.skill_card:hover .skill_card_header_6 .skill_card_icon,
+.skill_card:hover .skill_card_header_7 .skill_card_icon,
+.skill_card:hover .skill_card_header_8 .skill_card_icon,
+.skill_card:hover .skill_card_header_9 .skill_card_icon,
+.skill_card:hover .skill_card_header_10 .skill_card_icon,
+.skill_card:hover .skill_card_header_11 .skill_card_icon,
+.skill_card:hover .skill_card_header_12 .skill_card_icon {
+    transform: translateX(-50%) translateY(-50%) scale(3);
+}
+
+
+
+.skill_card:hover .skill_card_body {
+    height: 240px;
+}
+
+
+
+.skill_card .skill_card_body {
+    height: 30px;
+    transition: height 0.5s;
+    overflow: hidden;
+}
+
+
+/*=========================================================
+    스킬 타이틀
+=========================================================*/
+.skill_card .skill_card_body .skill_card_title {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Chosunilbo_myungjo';
+    // text-transform: uppercase;
+}
+
+
+/*=========================================================
+    호버 시 나오는 텍스트
+=========================================================*/
+.skill_card .skill_card_body .skill_card_knowledge {
+    margin-top: 10px;
+    color: #9E9E9E;
+}
+
+.skill_card .skill_card_body .skill_card_knowledge li {
+    font-size: 12px;
+    margin-top: 5px;
+    font-family: 'Chosunilbo_myungjo';
+    font-weight: 600;
+    transition-duration: 0;
+    transition-delay: 0.5s;
+    transform: translateX(-100%);
+    line-height: 14px;
+}
+
+.skill_card:hover .skill_card_body .skill_card_knowledge li {
+    transform: translateX(0);
+    transition-timing-function: cubic-bezier(0, 1.5, 1, 1);
+    transition-duration: 0.5s;
+}
+
+.skill_card:hover .skill_card_body .skill_card_knowledge li:nth-child(1) {
+    transition-delay: 0.25s;
+}
+
+.skill_card:hover .skill_card_body .skill_card_knowledge li:nth-child(2) {
+    transition-delay: 0.5s;
+}
+
+.skill_card:hover .skill_card_body .skill_card_knowledge li:nth-child(3) {
+    transition-delay: 0.75s;
+}
+
+.skill_card:hover .skill_card_body .skill_card_knowledge li:nth-child(4) {
+    transition-delay: 1s;
+}
+
+.skill_card:hover .skill_card_body .skill_card_knowledge li:nth-child(5) {
+    transition-delay: 1.25s;
+}
+
+.skill_card:hover .skill_card_body .skill_card_knowledge li:nth-child(6) {
+    transition-delay: 1.5s;
+}
+
+
+
+/*=========================================================
+    페이지 스크롤 시 애니메이션 정의
+=========================================================*/
+.skill_box1, .skill_box2, .skill_box3,
+.skill_box4, .skill_box5, .skill_box6,
+.skill_box7, .skill_box8, .skill_box9,
+.skill_box10, .skill_box11, .skill_box12 {
+    opacity: 0;
+    transform: translateY(50%);
+    transition: .8s;
+}
+
+
+// HTML
+.skill_box1.active_skill {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+// CSS
+.skill_box2.active_skill {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.3s;
+}
+
+// 자바스크립트
+.skill_box3.active_skill {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.5s;
+}
+
+// 제이쿼리
+.skill_box4.active_skill {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.8s;
+}
+
+// 부트스트랩
+.skill_box5.active_skill {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.1s;
+}
+
+// 리엑트
+.skill_box6.active_skill {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.4s;
+}
+
+// Sass
+.skill_box7.active_skill {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.7s;
+}
+
+// Node.js
+.skill_box8.active_skill {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 2.0s;
+}
+
+// MySQL
+.skill_box9.active_skill {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 2.3s;
+}
+
+// 깃
+.skill_box10.active_skill {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 2.6s;
+}
+
+// 슬랙
+.skill_box11.active_skill {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 2.9s;
+}
+
+// 포토샵
+.skill_box12.active_skill {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 3.2s;
+}
+
+
+
+/*=========================================================
+    반응형 기준점 정의
+    2001, 1801, 1441, 1251, 1101, 1001, 901, 501
+
+    Skill 페이지 반응형 기준점 정의
+    2001, 1907, 1801, 1683, 1644, 1567, 1490, 1413,
+    1336, 1327, 1283, 1267, 1251, 1113, 1025, 1011,
+    1001, 957, 901, 876, 787, 743, 718, 652, 585, 552,
+    518, 501, 488, 424, 378, 368
+=========================================================*/
+@include media('<2001px') {
+    .skillContant_inner {
+        width: 83%;
+    }
+
+    .skill_card {
+        width: 245px;
+    }
+
+    .skill_card .skill_card_header_1,
+    .skill_card .skill_card_header_2,
+    .skill_card .skill_card_header_3,
+    .skill_card .skill_card_header_4,
+    .skill_card .skill_card_header_5,
+    .skill_card .skill_card_header_6,
+    .skill_card .skill_card_header_7,
+    .skill_card .skill_card_header_8,
+    .skill_card .skill_card_header_9,
+    .skill_card .skill_card_header_10,
+    .skill_card .skill_card_header_11,
+    .skill_card .skill_card_header_12 {
+        height: 180px;
+    }
+
+    .skill_card:hover .skill_card_body {
+        height: 210px;
+    }
+}
+
+
+@include media('<1907px') {
+    .skill_card {
+        width: 230px;
+    }
+}
+
+
+@include media('<1801px') {
+    .skillContant_inner {
+        width: 78%;
+        height:calc(100vh - 520px);
+        gap: 20px;
+    }
+
+    .skill_card {
+        width: 200px;
+    }
+
+    .skill_card .skill_card_header_1,
+    .skill_card .skill_card_header_2,
+    .skill_card .skill_card_header_3,
+    .skill_card .skill_card_header_4,
+    .skill_card .skill_card_header_5,
+    .skill_card .skill_card_header_6,
+    .skill_card .skill_card_header_7,
+    .skill_card .skill_card_header_8,
+    .skill_card .skill_card_header_9,
+    .skill_card .skill_card_header_10,
+    .skill_card .skill_card_header_11,
+    .skill_card .skill_card_header_12 {
+        height: 150px;
+    }
+
+    .skill_card:hover .skill_card_body {
+        height: 180px;
+    }
+
+    // 스킬 로고 정의
+    .skill_card_header_1 .skill_card_icon,
+    .skill_card_header_2 .skill_card_icon,
+    .skill_card_header_3 .skill_card_icon,
+    .skill_card_header_4 .skill_card_icon,
+    .skill_card_header_5 .skill_card_icon,
+    .skill_card_header_6 .skill_card_icon,
+    .skill_card_header_7 .skill_card_icon,
+    .skill_card_header_8 .skill_card_icon,
+    .skill_card_header_9 .skill_card_icon,
+    .skill_card_header_10 .skill_card_icon,
+    .skill_card_header_11 .skill_card_icon,
+    .skill_card_header_12 .skill_card_icon {
+        width: 90px;
+        height: 90px;
+    }
+
+    // 스킬 타이틀
+    .skill_card .skill_card_body .skill_card_title {
+        font-size: 18px;
+    }
+
+    // 호버 시 나오는 텍스트
+    .skill_card .skill_card_body .skill_card_knowledge li {
+        font-size: 10px;
+        transform: translateX(-100%);
+    }
+
+    // nodejs, mysql
+    .wd_icon1 {
+        width: 120px !important;
+        height: 120px !important;
+    }
+
+    // slack
+    .wd_icon2 {
+        width: 140px !important;
+        height: 90px !important;
+    }
+
+    // 제이쿼리
+    .wd_icon3 {
+        width: 150px !important;
+        height: 100px !important;
+    }
+}
+
+
+@include media('<1683px') {
+    .skill_card {
+        width: 195px;
+    }
+}
+
+
+@include media('<1644px') {
+    .skill_card {
+        width: 185px;
+    }
+}
+
+
+@include media('<1567px') {
+    .skill_card {
+        width: 175px;
+    }
+}
+
+
+@include media('<1490px') {
+    .skill_card {
+        width: 165px;
+    }
+
+    .skill_card .skill_card_header_1,
+    .skill_card .skill_card_header_2,
+    .skill_card .skill_card_header_3,
+    .skill_card .skill_card_header_4,
+    .skill_card .skill_card_header_5,
+    .skill_card .skill_card_header_6,
+    .skill_card .skill_card_header_7,
+    .skill_card .skill_card_header_8,
+    .skill_card .skill_card_header_9,
+    .skill_card .skill_card_header_10,
+    .skill_card .skill_card_header_11,
+    .skill_card .skill_card_header_12 {
+        height: 130px;
+        margin: -20px -20px 10px -20px;
+    }
+
+    .skill_card:hover .skill_card_body {
+        height: 150px;
+    }
+
+    .skill_card .skill_card_body {
+        height: 20px;
+    }
+}
+
+
+@include media('<1413px') {
+    .skill_card {
+        width: 155px;
+    }
+}
+
+
+@include media('<1336px') {
+    .skillContant_inner{
+        height:calc(100vh - 520px);
+    }
+}
+
+
+@include media('<1327px') {
+    .skill_card {
+        width: 150px;
+    }
+}
+
+
+@include media('<1283px') {
+    .skillContant_inner{
+        height:auto;
+    }
+
+    .skill_card{
+        width:148px;
+    }
+
+    .wd_icon3, .wd_icon2{
+        width:120px !important;
+        height:80px !important;
+    }
+
+    .wd_icon1{
+        width:100px !important;
+        height:100px !important;
+    }
+}
+
+
+// 1244 -> 1267
+@include media('<1267px') {
+    .skillContant_inner{
+        height:calc(100vh - 350px);
+    }
+
+    .skill_card {
+        width: 200px;
+    }
+}
+
+@include media('<1251px') {
+    .skill_card .skill_card_body .skill_card_title{
+        font-size:16px;
+    }
+}
+
+
+@include media('<1113px') {
+    .skill_card {
+        width: 180px;
+    }
+}
+
+
+@include media('<1025px'){
+    .skill_card .skill_card_body .skill_card_title{
+        font-size:14px;
+    }
+}
+
+
+@include media('<1011px') {
+    .skill_card {
+        width: 160px;
+    }
+
+    .skill_card .skill_card_header_1,
+    .skill_card .skill_card_header_2,
+    .skill_card .skill_card_header_3,
+    .skill_card .skill_card_header_4,
+    .skill_card .skill_card_header_5,
+    .skill_card .skill_card_header_6,
+    .skill_card .skill_card_header_7,
+    .skill_card .skill_card_header_8,
+    .skill_card .skill_card_header_9,
+    .skill_card .skill_card_header_10,
+    .skill_card .skill_card_header_11,
+    .skill_card .skill_card_header_12 {
+        height: 130px;
+    }
+
+    .skill_card:hover .skill_card_body {
+        height: 150px;
+    }
+}
+
+
+@include media('<1001px') {
+    .skillContant_inner {
+        width: 74%;
+    }
+}
+
+
+@include media('<957px') {
+    .skill_card {
+        width: 145px;
+    }
+
+    // 스킬 타이틀
+    .skill_card .skill_card_body .skill_card_title {
+        font-size: 16px;
+    }
+
+    // 스킬 로고 정의
+    .skill_card_header_1 .skill_card_icon,
+    .skill_card_header_2 .skill_card_icon,
+    .skill_card_header_3 .skill_card_icon,
+    .skill_card_header_4 .skill_card_icon,
+    .skill_card_header_5 .skill_card_icon,
+    .skill_card_header_6 .skill_card_icon,
+    .skill_card_header_7 .skill_card_icon,
+    .skill_card_header_8 .skill_card_icon,
+    .skill_card_header_9 .skill_card_icon,
+    .skill_card_header_10 .skill_card_icon,
+    .skill_card_header_11 .skill_card_icon,
+    .skill_card_header_12 .skill_card_icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    // nodejs, mysql
+    .wd_icon1 {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    // slack
+    .wd_icon2 {
+        width: 120px !important;
+        height: 70px !important;
+    }
+
+    // 제이쿼리
+    .wd_icon3 {
+        width: 130px !important;
+        height: 80px !important;
+    }
+
+    // 호버 시 나오는 텍스트
+    .skill_card .skill_card_body .skill_card_knowledge li {
+        font-size: 10px;
+        letter-spacing: -0.5px;
+    }
+}
+
+
+@include media('<901px') {
+    // 원페이지 앵커 정의
+    #fp-nav.fp-right {
+        right: 9px;
+    }
+
+    .skillContant_inner {
+        width: 90%;
+    }
+
+    .skill_card {
+        width: 180px;
+    }
+
+    .skill_box1, .skill_box2, .skill_box3,
+    .skill_box4, .skill_box5, .skill_box6,
+    .skill_box7, .skill_box8, .skill_box9,
+    .skill_box10, .skill_box11, .skill_box12 {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .skill_card .skill_card_body .skill_card_title{
+        font-size:18px;
+    }
+}
+
+
+@include media('<876px') {
+    .skill_card {
+        width: 160px;
+    }
+}
+
+
+@include media('<787px') {
+    .skill_card {
+        width: 150px;
+    }
+
+    #fp-nav.fp-right {
+        right: 5px !important;
+    }
+}
+
+
+@include media('<743px') {
+    .skillContant_inner {
+        height:calc(100vh - 190px);
+    }
+
+    .skill_card {
+        width: 200px;
+    }
+
+    .mob_top {
+        top: 75%;
+    }
+
+    .mod_bottom {
+        top: 51%;
+    }
+}
+
+
+@include media('<718px') {
+    .skill_card {
+        width: 180px;
+    }
+}
+
+@include media('<652px') {
+    .skill_card {
+        width: 160px;
+    }
+
+    #fp-nav.fp-right {
+        right: 0 !important;
+    }
+}
+
+
+@include media('<585px') {
+    .skill_card {
+        width: 150px;
+    }
+
+    .skill_card .skill_card_body .skill_card_title {
+        font-size: 14px;
+    }
+}
+
+
+@include media('<552px') {
+    .skill_card {
+        width: 140px;
+    }
+
+    .skill_card .skill_card_header_1,
+    .skill_card .skill_card_header_2,
+    .skill_card .skill_card_header_3,
+    .skill_card .skill_card_header_4,
+    .skill_card .skill_card_header_5,
+    .skill_card .skill_card_header_6,
+    .skill_card .skill_card_header_7,
+    .skill_card .skill_card_header_8,
+    .skill_card .skill_card_header_9,
+    .skill_card .skill_card_header_10,
+    .skill_card .skill_card_header_11,
+    .skill_card .skill_card_header_12 {
+        height: 120px;
+    }
+
+    .skill_card:hover .skill_card_body {
+        height: 140px;
+    }
+}
+
+
+@include media('<518px') {
+    .skillContant_inner {
+        height:calc(100vh - 180px);
+    }
+
+    .skill_card {
+        width: 200px;
+        transform: translateY(0) translateX(-50%);
+        top: 0;
+    }
+
+    .down_1 {
+        top: 0;
+    }
+
+    .mob_top {
+        top: 0;
+    }
+
+    .mod_bottom {
+        top: 0;
+    }
+
+    .active_skill {}
+}
+
+
+@include media('<501px') {
+    .skill_card {
+        width: 210px;
+    }
+}
+
+
+@include media('<488px') {
+    .skill_card {
+        width: 180px;
+    }
+}
+
+
+@include media('<424px') {
+    .skill_card {
+        width: 160px;
+    }
+}
+
+
+@include media('<378px') {
+    .skill_card {
+        width: 155px;
+    }
+}
+
+@include media('<368px') {
+    .skill_card {
+        width: 145px;
+    }
+}
+
+
+@include media('<361px') {
+    .skillContant_inner{
+        height:calc(100vh - 150px);        
+    }
+
+    .skill_card{
+        width:150px;
+    }
+
+    .skill_card .skill_card_body{
+        height:15px;
+    }
+}

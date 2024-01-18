@@ -1,0 +1,216 @@
+@import '~include-media/dist/include-media';
+
+/*=========================================================
+    헤더 섹션마다 배경 관련 정의
+=========================================================*/
+.header_bg{
+    background:rgba(255, 255, 255, 0.7);
+    z-index: 10;
+}
+
+
+/*=========================================================
+    헤더 정의
+=========================================================*/
+header{
+    width:100%;
+    height:100px;
+    color:#fff;
+    padding:20px 0;
+    position:fixed;
+    z-index:300;
+    transition: background-color 0.5s;
+    display:flex;
+    align-items: center;
+}
+
+
+/*=========================================================
+    헤더 세부 정의
+=========================================================*/
+.header_inner{
+    width:1800px;
+    margin:0 auto;
+    position: relative;
+}
+
+
+/*=========================================================
+    헤더 로고 정의
+=========================================================*/
+.header_logo{
+    display:inline-block;
+    color:#fff;
+    font-size:24px;
+    font-family: 'Tenada';
+}
+
+.logo_black{
+    display:inline-block;
+    color:#000;
+    font-size:24px;
+    font-family: 'Tenada';
+}
+
+
+/*=========================================================
+    
+=========================================================*/
+.header_gnb{
+    display:flex;
+    justify-content: space-between;
+    width:750px;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.header_gnb li{
+    position: relative;
+    font-family: 'Tenada';
+}
+
+.header_gnb li a{
+    color:#fff;
+    font-size:24px;
+}
+
+
+.header_gnb li.on::after{
+    opacity: 1;
+}
+
+.header_gnb li::after{
+    content:'';
+    opacity: 0.3;
+    display:block;
+    width:45px;
+    height:4px;
+    background:#fff;
+    position: absolute;
+    left:50%;
+    bottom:-10px;
+    transform: translateX(-50%);
+    transition: all 1s;
+}
+
+
+
+
+/*=========================================================
+    헤더 라인
+=========================================================*/
+.header_gnb .header_on::after{
+    opacity: 1;
+}
+
+.header_gnb .header_on0::after{
+    opacity: 1;
+}
+
+.header_gnb .header_on1::after{
+    opacity: 1;
+    background:#000;
+}
+
+.header_gnb .header_on2::after{
+    opacity: 1;
+    background:#000;
+}
+
+.header_gnb .header_on3::after{
+    opacity: 1;
+    background:#000;
+}
+
+.header_gnb .header_on4::after{
+    opacity: 1;
+    background:#000;
+}
+
+
+
+.header_gnb .header_line::after{
+    background:#000;
+    opacity: 0.3;
+}
+
+
+
+
+/*=========================================================
+    반응형 기준점 정의
+    2001, 1801, 1251, 1001, 901
+=========================================================*/
+
+@include media('<2001px'){
+    .header_inner{
+        width:90%;
+    }
+
+    .header_logo, .logo_black{
+        margin-left:4%;
+	}
+
+    .header_gnb{
+		width:700px;
+        margin-right:4%;
+	} 
+}
+
+
+@include media('<1801px'){
+	.header_logo, .logo_black{
+		font-size:18px;
+        margin-left:7%;
+	}
+
+	.header_gnb li a{
+		font-size:18px;
+	}
+
+	.header_gnb{
+		width:600px;
+        margin-right:7%;
+	} 
+}
+
+
+@include media('<1251px'){
+	.header_logo, .logo_black{
+		font-size:18px;
+        margin-left:7%;
+	}
+
+	.header_gnb li a{
+		font-size:18px;
+	}
+
+	.header_gnb{
+		width:600px;
+	} 
+}
+
+
+@include media('<1001px'){
+    .header_logo, .logo_black{
+        font-size:16px;
+        margin-left:9%;
+    }
+
+    .header_gnb li a{
+		font-size:16px;
+	}
+
+    .header_gnb{
+        width:500px;
+    }
+}
+
+
+@include media('<901px'){
+	// PC 헤더 숨김
+	header{
+		display:none;
+	}
+}
