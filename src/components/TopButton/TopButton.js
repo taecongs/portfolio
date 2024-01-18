@@ -27,14 +27,14 @@ const TopButton = () => {
                     </span>
                 </a> */}
 
-                <a href='https://abundant-cyclamen-76a.notion.site/36c16de1f1bd4212a9be5040c2c3a655' target='_blank' rel='noopener noreferrer' alt='노션 바로가기' title='노션 바로가기'>
+                <a href='https://abundant-cyclamen-76a.notion.site/f2f7b08e86a54692b4e9f0b140d51c08?pvs=4' target='_blank' rel='noopener noreferrer' title='노션 바로가기'>
                     <span className="second">
                         <b className='nn_t'>Notion</b> <img src={notion} alt='노션 바로가기' />
                     </span>
                 </a>
 
 
-                <a href='https://github.com/taecongs' target='_blank' rel='noopener noreferrer' alt='깃헙 바로가기' title='깃헙 바로가기'>
+                <a href='https://github.com/taecongs' target='_blank' rel='noopener noreferrer' title='깃헙 바로가기'>
                     <span className="third">
                         <img src={github} alt='깃헙 바로가기' /> <b className='gg_t'>Github</b>
                     </span>

@@ -8,7 +8,7 @@ const Header = () => {
         <header>
             <div className='header_inner'>
                 <h1 className='header_logo'>
-                    Front-end Developer
+                    Web Publisher
                 </h1>
 
                 <nav className='header_nav'>
