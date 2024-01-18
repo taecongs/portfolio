@@ -1,7 +1,7 @@
 import './About.scss';
 
 import $img1 from './img/ov_img2.gif';
-import $pdf from './pdf/이력서.pdf';
+import $pdf from './pdf/resume.pdf';
 
 
 const About = () => {
