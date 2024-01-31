@@ -200,6 +200,7 @@
     width: 128px;
     height: 128px;
     transition: transform 0.5s;
+    will-change: transform;
 }
 
 
@@ -342,6 +343,7 @@
     opacity: 0;
     transform: translateY(50%);
     transition: .8s;
+    -webkit-transform: translate3d(0, 0, 0);
 }
 
 
@@ -349,6 +351,7 @@
 .skill_box1.active_skill {
     opacity: 1;
     transform: translateY(0);
+    -webkit-transform: translate3d(0, 0, 0);
 }
 
 

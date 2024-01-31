@@ -200,13 +200,17 @@
 =========================================================*/
 .about_right {
     opacity: 0;
-    transform: translateX(10%);
+    // transform: translateX(10%);
+    position: relative;
+    left:10%;
     transition: .8s;
 }
 
 .about_right.active_about_r {
     opacity: 1;
-    transform: translateX(0);
+    // transform: translateX(0);
+    position: relative;
+    left:0;
     transition-delay: 0.3s;
 }
 
@@ -404,6 +408,10 @@
     .about_left,
     .about_right {
         width: 65%;
+    }
+
+    .about_right{
+        left:0;
     }
 
     .about_title {
