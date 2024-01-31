@@ -184,14 +184,20 @@
 =========================================================*/
 .about_left {
     opacity: 0;
-    transform: translateX(-10%);
+    // transform: translateX(-10%);
     transition: .8s;
+    
+    position: relative;
+    left:-10%;
 }
 
 .about_left.active_about_l {
     opacity: 1;
-    transform: translateX(0);
+    // transform: translateX(0);
     transition-delay: 0.1s;
+
+    position: relative;
+    left:0;
 }
 
 
@@ -201,17 +207,19 @@
 .about_right {
     opacity: 0;
     // transform: translateX(10%);
+    transition: .8s;
+
     position: relative;
     left:10%;
-    transition: .8s;
 }
 
 .about_right.active_about_r {
     opacity: 1;
     // transform: translateX(0);
+    transition-delay: 0.3s;
+
     position: relative;
     left:0;
-    transition-delay: 0.3s;
 }
 
 
